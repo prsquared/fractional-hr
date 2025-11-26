@@ -176,6 +176,13 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, .dropbtn:focus-visibl
   .cta-band .container { flex-direction: column; align-items: flex-start; }
 }
 
+/* Brand wordmark (SVG) used in header */
+.brand-wordmark { height: 32px; width: auto; display: inline-block; vertical-align: middle; }
+
+@media (max-width: 640px) {
+  .brand-wordmark { height: 26px; }
+}
+
 
 /* Contact page */
 .page-hero {
