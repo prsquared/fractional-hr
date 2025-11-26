@@ -125,7 +125,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { transform:
 .social-topbar .social-links a { margin-right:0.75rem; color:inherit; text-decoration:none; font-size:0.92rem; }
 
 /* Social icon: white by default for good contrast against the light blue band */
-.social-icon { width: 20px; height: 20px; color: #fff; display: block; transition: color 160ms ease, transform 120ms ease; }
+.social-icon { width: 20px; height: 20px; color: #40A6B9; display: block; transition: color 160ms ease, transform 120ms ease; }
 
 /* Links: transparent background so icons sit directly on the blue band; hover inverts to white circle with primary-colored icon */
 .social-links a { display: inline-flex; align-items: center; justify-content: center; padding: 6px; border-radius: 8px; background: transparent; transition: background 160ms ease, transform 120ms ease; }

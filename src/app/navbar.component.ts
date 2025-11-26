@@ -44,7 +44,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
         </ul>
       </div>
       <a routerLink="/about" routerLinkActive="active" (click)="closeMenus()">About</a>
-      <a routerLink="/contact" routerLinkActive="active" (click)="closeMenus()">Contact</a>
+
     </nav>
     <a hidden class="btn primary" routerLink="/contact">Free Consult</a>
   </div>

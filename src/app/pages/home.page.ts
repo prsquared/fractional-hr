@@ -1,88 +1,122 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { CarouselComponent } from '../carousel.component';
 
 @Component({
   standalone: true,
   selector: 'app-home',
-  imports: [RouterLink],
+  imports: [RouterLink, CarouselComponent],
   template: `
-    <section class="hero hero-split">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <h1>Practical, People-First HR for Small Businesses in Ontario</h1>
-          <p class="subhead">
-            From hiring and compliance to accommodations and tough conversations — get calm,
-            expert HR support without the cost of a full-time team.
-          </p>
-          <div class="actions">
-            <a routerLink="/contact" class="btn primary">Book Your Free 15-Minute HR Audit Call</a>
-            <a routerLink="/essential-hr" class="btn">Explore Services</a>
-          </div>
-          <ul class="trust">
-            <li>Ontario-based</li>
-            <li>ESA, OHSA & AODA</li>
-            <li>WSIB & Return-to-Work</li>
-            <li>For Small Businesses Across Industries</li>
-            <li>Bilingual (EN/FR)</li>
-          </ul>
-        </div>
+    <!-- Replaced static sections with the carousel component (full-bleed) -->
+    <section class="carousel-section">
+      <app-carousel [slides]="slides" [interval]="2000"></app-carousel>
+    </section>
 
-        <div class="hero-image">
-          <img
-            src="assets/images/home-hero-team.png"
-            alt="Small team collaborating around a table"
-          />
+    <!-- Hidden, meaningful H1 for SEO / screen readers -->
+    <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;">Fractional HR — Practical HR Support for Small Businesses</h1>
+
+    <!-- Next steps: full-width image with an overlay panel anchored middle-right -->
+    <section hidden class="process full-bleed-image" aria-labelledby="next-steps">
+      <figure class="process-image" aria-hidden="true">
+        <img src="/assets/images/home-hero-team.png" alt="HR consultant working with a team" />
+
+        <!-- moved overlay inside figure so it's positioned relative to the image -->
+        <div class="process-overlay" role="region" aria-labelledby="next-steps-panel">
+          <div class="process-content">
+            <h2 id="next-steps-panel">Next steps</h2>
+            <p class="lede">Simple, predictable steps to get you useful HR outcomes without the overhead.</p>
+
+            <ul class="steps-grid">
+              <li class="step-card">
+                <div class="icon" aria-hidden="true">📞</div>
+                <div>
+                  <h3>Discovery call</h3>
+                  <p>We listen to your priorities, constraints, and the outcomes that matter most to your team.</p>
+                </div>
+              </li>
+
+              <li class="step-card">
+                <div class="icon" aria-hidden="true">🧭</div>
+                <div>
+                  <h3>Tailored plan</h3>
+                  <p>A concise plan with clear pricing, timelines, and reusable templates to keep things moving.</p>
+                </div>
+              </li>
+
+              <li class="step-card">
+                <div class="icon" aria-hidden="true">🛠️</div>
+                <div>
+                  <h3>Confident execution</h3>
+                  <p>Hands-on support, coaching, and templates so you can act quickly and compliantly.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="center">
+              <a routerLink="/contact" class="btn primary btn-lg" aria-label="Book your free 15 minute HR audit call">Book Your Free 15‑Minute HR Audit Call</a>
+            </div>
+          </div>
         </div>
+      </figure>
+    </section>
+
+    <section hidden class="testimonials container" aria-labelledby="client-words">
+      <h2 id="client-words">Client Words</h2>
+      <p class="lede">Short, real feedback from small business partners.</p>
+
+      <div class="testimonials-grid">
+        <figure class="testimonial-card">
+          <blockquote>“Geetu gave us clear, step‑by‑step help on a sensitive employee issue. Fair, compliant, and respectful.”</blockquote>
+          <figcaption>— Partner, Small Business</figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <blockquote>“Our onboarding finally feels organized. The checklists and templates saved us hours.”</blockquote>
+          <figcaption>— Founder, Small Business</figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <blockquote>“On‑call advice helped us navigate accommodations and RTW the right way.”</blockquote>
+          <figcaption>— Director, Small Business</figcaption>
+        </figure>
       </div>
     </section>
 
-<section class="value container">
-  <p>I help founders and small teams across industries set up simple HR foundations, stay compliant, and resolve people issues with confidence. Choose one‑time projects or monthly fractional HR support with a responsive advisor you can count on.</p>
-</section>
-
-<section class="why container">
-  <h2>Why Work With Fractional HR</h2>
-  <div class="grid three">
-    <div>
-      <h4>Calm & Clear</h4>
-      <p>Clear next steps without the jargon.</p>
-    </div>
-    <div>
-      <h4>Ontario Expertise</h4>
-      <p>ESA/OHSA/AODA aligned; experience with small businesses in unionized and non‑union settings.</p>
-    </div>
-    <div>
-      <h4>Practical & Data‑Informed</h4>
-      <p>High‑volume recruitment, scheduling, and HRIS (Dayforce, Workday) know‑how.</p>
-    </div>
-  </div>
-</section>
-
-<section class="process container">
-  <h2>How It Works</h2>
-  <ol class="steps">
-    <li><strong>Discovery call</strong> to pinpoint your priorities</li>
-    <li><strong>Tailored plan</strong> with clear pricing and timelines</li>
-    <li><strong>Confident execution</strong> with reusable templates</li>
-  </ol>
-  <div class="center">
-    <a routerLink="/contact" class="btn primary">Book Your Free 15‑Minute HR Audit Call</a>
-  </div>
-</section>
-
-<section class="testimonials container">
-  <h2>Client Words</h2>
-  <blockquote>“Geetu gave us clear, step‑by‑step help on a sensitive employee issue. Fair, compliant, and respectful.” <span>— Partner, Small Business</span></blockquote>
-  <blockquote>“Our onboarding finally feels organized. The checklists and templates saved us hours.” <span>— Founder, Small Business</span></blockquote>
-  <blockquote>“On‑call advice helped us navigate accommodations and RTW the right way.” <span>— Director, Small Business</span></blockquote>
-</section>
-
-<section class="cta-band">
-  <div class="container">
-    <h2>Ready to make HR simpler and safer?</h2>
-    <a routerLink="/contact" class="btn primary">Book Your Free 15‑Minute HR Audit Call</a>
-  </div>
-</section>
+    <section hidden class="cta-band" role="region" aria-label="Primary call to action">
+      <div class="container cta-inner">
+        <h2>Ready to make HR simpler and safer?</h2>
+        <div class="cta-actions">
+          <a routerLink="/contact" class="btn primary">Book Your Free 15‑Minute HR Audit Call</a>
+          <a routerLink="/essential-hr" class="btn secondary" aria-label="Learn about services">See Services</a>
+        </div>
+      </div>
+    </section>
   `
 })
-export class HomePage {}
+export class HomePage {
+  slides = [
+    {
+      title: 'Why Work With Fractional HR',
+      summary: 'Practical, expert HR support when you need it — without the cost of a full team.',
+      full: 'We help small businesses with hiring, compliance, accommodations, and people strategy. Work with a responsive advisor who understands Ontario rules and small-team dynamics.',
+      image: 'assets/images/home-hero-team.png',
+      action: '/essential-hr',
+      corner: 'corner'
+    },
+    {
+      title: 'Services',
+      summary: 'Flexible offerings: one-time projects, retainers, and on-call HR support.',
+      full: 'From job descriptions and recruitment to performance management and WSIB/RTW, we provide templates, coaching, and hands-on support tailored to your needs.',
+      image: 'assets/images/fractional_hr_wordmark.png',
+      action: '/essential-hr'
+    },
+    {
+      title: 'About Geetu',
+      summary: 'An experienced HR advisor focused on small businesses and practical outcomes.',
+      full: 'Geetu brings years of HR leadership across industries, with a calm, people-first approach. Bilingual and Ontario-focused, she helps organizations build simple, durable HR practices.',
+      image: 'assets/images/about.png',
+      action: '/about',
+      corner: 'corner'
+    }
+  ];
+}
