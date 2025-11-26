@@ -15,8 +15,14 @@ import { RouterLink } from '@angular/router';
 
 <section class="container about">
   <div>
-    <h2>Hi — I’m Geetu.</h2>
-    <p>I’m an Ontario‑based HR professional with 5+ years of experience helping small businesses across industries with employee relations, disability and return‑to‑work, recruitment, and HR operations. I bring a calm, people‑first approach and clear, compliant steps you can trust.</p>
+    <h2>Hi, I’m Geetu Ayyappan</h2>
+    <p>I'm an HR professional dedicated to helping small businesses build strong, confident, compliant workplaces without the cost of a full-time HR team. With experience across recruitment, employee relations, HR operations, policy development, and performance support, I bring practical, people-first solutions designed for growing organizations.
+
+      I understand the challenges of small business owners — you’re juggling everything. My role is to make HR simple, clear, and stress-free so you can focus on what matters most: running your business and supporting your people.
+
+      Whether you need help setting up HR fundamentals, navigating employee issues, improving culture and engagement, or accessing ongoing fractional HR support, I’m here as your trusted partner in people and compliance.
+
+      My approach is warm, collaborative, and grounded in real experience. I believe that good HR isn’t just paperwork — it’s about creating workplaces where people feel respected, supported, and empowered to do their best work.</p>
 
     <h3>What Clients Appreciate</h3>
     <ul class="bullets">
@@ -34,13 +40,6 @@ import { RouterLink } from '@angular/router';
       <li>ESA, OHSA, AODA policies and briefings</li>
     </ul>
 
-    <h3>Credentials</h3>
-    <ul class="bullets">
-      <li>HRPA Member; CHRL candidate (Exam: June 2025)</li>
-      <li>Human Resource Management Diploma, Fanshawe College (Dean’s Honour Roll)</li>
-      <li>MBA in Human Resource Management; B.Eng. (Electronics & Telecommunication)</li>
-      <li>Bilingual: English (fluent), French (intermediate)</li>
-    </ul>
 
     <p class="note">You’ll always get honest guidance, clear timelines, and kind, confidential support — especially when situations are sensitive.</p>
 
