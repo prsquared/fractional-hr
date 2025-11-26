@@ -6,23 +6,35 @@ import { RouterLink } from '@angular/router';
   selector: 'app-home',
   imports: [RouterLink],
   template: `
-<section class="hero">
-  <div class="hero-content">
-    <h1>Practical, People‑First HR for Small Businesses in Ontario</h1>
-    <p class="subhead">From hiring and compliance to accommodations and tough conversations — get calm, expert HR support without the cost of a full‑time team.</p>
-    <div class="actions">
-      <a routerLink="/contact" class="btn primary">Book Your Free 15‑Minute HR Audit Call</a>
-      <a routerLink="/essential-hr" class="btn">Explore Services</a>
-    </div>
-    <ul class="trust">
-      <li>Ontario‑based</li>
-      <li>ESA, OHSA & AODA</li>
-      <li>WSIB & Return‑to‑Work</li>
-      <li>For Small Businesses Across Industries</li>
-      <li>Bilingual (EN/FR)</li>
-    </ul>
-  </div>
-</section>
+    <section class="hero hero-split">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Practical, People-First HR for Small Businesses in Ontario</h1>
+          <p class="subhead">
+            From hiring and compliance to accommodations and tough conversations — get calm,
+            expert HR support without the cost of a full-time team.
+          </p>
+          <div class="actions">
+            <a routerLink="/contact" class="btn primary">Book Your Free 15-Minute HR Audit Call</a>
+            <a routerLink="/essential-hr" class="btn">Explore Services</a>
+          </div>
+          <ul class="trust">
+            <li>Ontario-based</li>
+            <li>ESA, OHSA & AODA</li>
+            <li>WSIB & Return-to-Work</li>
+            <li>For Small Businesses Across Industries</li>
+            <li>Bilingual (EN/FR)</li>
+          </ul>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="assets/images/home-hero-team.png"
+            alt="Small team collaborating around a table"
+          />
+        </div>
+      </div>
+    </section>
 
 <section class="value container">
   <p>I help founders and small teams across industries set up simple HR foundations, stay compliant, and resolve people issues with confidence. Choose one‑time projects or monthly fractional HR support with a responsive advisor you can count on.</p>
