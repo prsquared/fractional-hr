@@ -109,3 +109,37 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { transform:
   .dropdown-menu{position:static; border:0; box-shadow:none; padding-left:0}
   .container.nav{position:relative}
 }
+
+/* Social topbar (above header) - lighter blue to match Free consult button */
+.social-topbar {
+  /* lighter, brand-matching single-color band using the primary RGB at low opacity for subtlety */
+  background: linear-gradient(90deg, rgba(var(--primary-rgb),0.12), rgba(var(--primary-rgb),0.06));
+  color: #fff; /* white text/icons to match button text */
+  border-bottom: 1px solid rgba(var(--primary-rgb),0.10);
+  transition: transform 240ms ease, opacity 240ms ease;
+  position: sticky;
+  top: 0; /* stick to very top */
+  z-index: 10005;
+}
+.social-topbar .nav-social { display:flex; align-items:center; justify-content:space-between; padding:0.45rem 0; }
+.social-topbar .social-links a { margin-right:0.75rem; color:inherit; text-decoration:none; font-size:0.92rem; }
+
+/* Social icon: white by default for good contrast against the light blue band */
+.social-icon { width: 20px; height: 20px; color: #fff; display: block; transition: color 160ms ease, transform 120ms ease; }
+
+/* Links: transparent background so icons sit directly on the blue band; hover inverts to white circle with primary-colored icon */
+.social-links a { display: inline-flex; align-items: center; justify-content: center; padding: 6px; border-radius: 8px; background: transparent; transition: background 160ms ease, transform 120ms ease; }
+.social-links a:hover { background: #fff; transform: translateY(-2px); }
+.social-links a:hover .social-icon, .social-links a:focus .social-icon { color: rgba(var(--primary-rgb),1); transform: translateY(-1px); }
+.social-links a:focus { outline: none; box-shadow: 0 0 0 6px rgba(var(--primary-rgb),0.12); }
+
+/* Slightly larger icons on desktop */
+@media (min-width: 900px) {
+  .social-icon { width: 22px; height: 22px; }
+  .social-links a { padding: 8px; }
+}
+
+.social-topbar.hidden { transform: translateY(-100%); opacity:0; pointer-events:none; }
+
+/* Make space for the topbar so header doesn't overlap content when it's visible */
+body.has-topbar .site-header { margin-top: 44px; }
