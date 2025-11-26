@@ -40,44 +40,8 @@ import { RouterLink } from '@angular/router';
   <p>I help founders and small teams across industries set up simple HR foundations, stay compliant, and resolve people issues with confidence. Choose one‑time projects or monthly fractional HR support with a responsive advisor you can count on.</p>
 </section>
 
-<section class="services container">
-  <h2>Services</h2>
-  <div class="grid">
-    <a class="card" routerLink="/essential-hr">
-      <h3>Essential HR Setup</h3>
-      <p>Policies, onboarding kits, and right‑sized HR processes.</p>
-      <span class="more">Learn more →</span>
-    </a>
-    <a class="card" routerLink="/fractional-hr">
-      <h3>Fractional HR Support</h3>
-      <p>On‑call HR advisor plus hands‑on HRBP services.</p>
-      <span class="more">Learn more →</span>
-    </a>
-    <a class="card" routerLink="/recruitment-onboarding">
-      <h3>Recruitment & Onboarding</h3>
-      <p>Structured hiring and faster ramp‑up.</p>
-      <span class="more">Learn more →</span>
-    </a>
-    <a class="card" routerLink="/hr-compliance">
-      <h3>HR Compliance</h3>
-      <p>ESA, OHSA, AODA, handbooks, and audits.</p>
-      <span class="more">Learn more →</span>
-    </a>
-    <a class="card" routerLink="/employee-relations">
-      <h3>Employee Relations & Performance</h3>
-      <p>Coaching, investigations, and documentation.</p>
-      <span class="more">Learn more →</span>
-    </a>
-    <a class="card" routerLink="/disability-rtw">
-      <h3>Disability & RTW</h3>
-      <p>WSIB, STD/LTD, accommodations, safe RTW plans.</p>
-      <span class="more">Learn more →</span>
-    </a>
-  </div>
-</section>
-
 <section class="why container">
-  <h2>Why Work With Geetu</h2>
+  <h2>Why Work With Fractional HR</h2>
   <div class="grid three">
     <div>
       <h4>Calm & Clear</h4>

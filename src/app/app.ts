@@ -1,24 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './navbar.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, RouterLink, NavbarComponent],
   template: `
-<header class="site-header">
-  <div class="container nav">
-    <div class="brand"><a routerLink="/">Geetu Consulting</a></div>
-    <nav>
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
-      <a routerLink="/essential-hr" routerLinkActive="active">Essential HR</a>
-      <a routerLink="/fractional-hr" routerLinkActive="active">Fractional HR</a>
-      <a routerLink="/about" routerLinkActive="active">About</a>
-      <a routerLink="/contact" routerLinkActive="active">Contact</a>
-    </nav>
-    <a class="btn primary" routerLink="/contact">Book Free HR Audit</a>
-  </div>
-</header>
+<app-navbar></app-navbar>
 <main class="container main">
   <router-outlet />
 </main>
@@ -41,7 +30,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     </div>
     <div>
       <h4>Contact</h4>
-      <p><a href="mailto:info@geetuconsulting.ca">info@geetuconsulting.ca</a><br/>Serving small businesses across Ontario</p>
+      <p><a href="mailto:info&#64;geetuconsulting.ca">info&#64;geetuconsulting.ca</a><br/>Serving small businesses across Ontario</p>
     </div>
     <div>
       <h4>Legal</h4>
@@ -56,6 +45,4 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 `,
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('Geetu Consulting');
-}
+export class App {}
