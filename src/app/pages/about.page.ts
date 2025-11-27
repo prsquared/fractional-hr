@@ -6,7 +6,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-about',
   imports: [RouterLink],
   template: `
-<section class="page-hero">
+<section hidden class="page-hero">
   <div class="container">
     <h1>About Geetu Ayyappan</h1>
     <p>Ontario HR support that’s friendly, practical, and on your side.</p>
@@ -15,14 +15,16 @@ import { RouterLink } from '@angular/router';
 
 <section class="container about">
   <div>
-    <h2>Hi, I’m Geetu Ayyappan</h2>
-    <p>I'm an HR professional dedicated to helping small businesses build strong, confident, compliant workplaces without the cost of a full-time HR team. With experience across recruitment, employee relations, HR operations, policy development, and performance support, I bring practical, people-first solutions designed for growing organizations.
+    <h2>About me</h2>
+    <p>Hi, I’m Geetu, an HR advisor who genuinely believes that people are the heart of every business, no matter the size.
 
-      I understand the challenges of small business owners — you’re juggling everything. My role is to make HR simple, clear, and stress-free so you can focus on what matters most: running your business and supporting your people.
+      After years of working across different industries, I realized something important: small businesses deserve the same high-quality HR guidance that big companies rely on, but delivered in a simple, practical, and human way. That’s why I built Fractional HR; to support owners and teams who want to “do things right,” even without a full-time HR department.
 
-      Whether you need help setting up HR fundamentals, navigating employee issues, improving culture and engagement, or accessing ongoing fractional HR support, I’m here as your trusted partner in people and compliance.
+      My approach is calm, people-first, and rooted in real-world experience. I focus on creating clear, sustainable HR practices that make everyday work smoother, whether that’s hiring the right people, building fair processes, ensuring compliance, or strengthening a healthy workplace culture.
 
-      My approach is warm, collaborative, and grounded in real experience. I believe that good HR isn’t just paperwork — it’s about creating workplaces where people feel respected, supported, and empowered to do their best work.</p>
+      I’m based in Ontario and bilingual, and I work closely with small businesses who want HR support that is accessible, reliable, and tailored to their pace of growth. My goal is to help you reduce risk, build trust, and create an environment where your people thrive and your business can scale confidently.
+
+      If you’re looking for HR guidance that feels like a true partnership, I’m here to help, one practical step at a time.</p>
 
     <h3>What Clients Appreciate</h3>
     <ul class="bullets">
