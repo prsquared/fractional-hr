@@ -97,24 +97,24 @@ export class HomePage {
   slides = [
     {
       title: 'Why Work With Fractional HR',
-      summary: 'Practical, expert HR support when you need it — without the cost of a full team.',
+      summary: 'Practical, expert HR support when you need it; without the cost of a full team.',
       full: 'We help small businesses with hiring, compliance, accommodations, and people strategy. Work with a responsive advisor who understands Ontario rules and small-team dynamics.',
-      image: 'assets/images/home-hero-team.png',
-      action: '/essential-hr',
+      image: 'assets/images/team-brainstorm-meeting-in-bright-sunny-office.jpg',
+      action: '/employee-relations',
       corner: 'corner'
     },
     {
-      title: 'Services',
+      title: 'Services offered',
       summary: 'Flexible offerings: one-time projects, retainers, and on-call HR support.',
       full: 'From job descriptions and recruitment to performance management and WSIB/RTW, we provide templates, coaching, and hands-on support tailored to your needs.',
-      image: 'assets/images/fractional_hr_wordmark.png',
+      image: 'assets/images/business-team-meeting-boardroom.jpg',
       action: '/essential-hr'
     },
     {
-      title: 'About Geetu',
-      summary: 'An experienced HR advisor focused on small businesses and practical outcomes.',
-      full: 'Geetu brings years of HR leadership across industries, with a calm, people-first approach. Bilingual and Ontario-focused, she helps organizations build simple, durable HR practices.',
-      image: 'assets/images/about.png',
+      title: 'Simplifying HR for Small Businesses',
+      summary: 'People are the heart of every business, no matter the size.',
+      full: 'My goal is to help small businesses receive high-quality HR guidance that big organizations rely, on, but delivered in a simple, practical, and human way.  My goal is to help small businesses receive high-quality HR guidance that big organizations rely, on, but delivered in a simple, practical, and human way. ',
+      image: 'assets/images/about-2.png',
       action: '/about',
       corner: 'corner'
     }
