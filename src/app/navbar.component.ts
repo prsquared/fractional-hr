@@ -59,6 +59,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
   services = [
     { label: 'Essential HR', path: '/essential-hr' },
     { label: 'Fractional HR', path: '/fractional-hr' },
+    { label: 'Process Documentation', path: '/process-documentation' },
     { label: 'Recruitment & Onboarding', path: '/recruitment-onboarding' },
     { label: 'HR Compliance', path: '/hr-compliance' },
     { label: 'Employee Relations & Performance', path: '/employee-relations' },
