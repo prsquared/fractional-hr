@@ -16,15 +16,15 @@ import { RouterLink } from '@angular/router';
 <section class="container about">
   <div>
     <h2>About me</h2>
-    <p>Hi, I’m Geetu, an HR advisor who genuinely believes that people are the heart of every business, no matter the size.
+    <p>Hi, I’m Geetu, an HR Advisor and Fractional HR Partner dedicated to helping small businesses build strong, simple, and compliant people practices without the overwhelm.</p>
 
-      After years of working across different industries, I realized something important: small businesses deserve the same high-quality HR guidance that big companies rely on, but delivered in a simple, practical, and human way. That’s why I built Fractional HR; to support owners and teams who want to “do things right,” even without a full-time HR department.
+    <p>With over five years of HR experience across healthcare, technology, and construction, I bring a calm, structured, and solutions-focused approach to HR. I’ve supported leaders in everything from employee relations and policy interpretation to HR operations, recruitment, HR analytics, WSIB/RTW, and HRIS management; always with a focus on fairness, clarity, and doing what’s right for people and the organization.</p>
 
-      My approach is calm, people-first, and rooted in real-world experience. I focus on creating clear, sustainable HR practices that make everyday work smoother, whether that’s hiring the right people, building fair processes, ensuring compliance, or strengthening a healthy workplace culture.
+    <p>I started Fractional HR because I saw how many small businesses struggle with HR; not because they don’t care, but because they simply don’t have the time, bandwidth, or expertise to manage everything behind the scenes. My goal is to make HR feel approachable, human, and streamlined so you can focus on growing your business with confidence.</p>
 
-      I’m based in Ontario and bilingual, and I work closely with small businesses who want HR support that is accessible, reliable, and tailored to their pace of growth. My goal is to help you reduce risk, build trust, and create an environment where your people thrive and your business can scale confidently.
+    <p>Whether it’s handling day-to-day HR questions, setting up policies the right way, guiding managers through difficult moments, or building clean HR processes from scratch; I’m here to help you do things right the first time.</p>
 
-      If you’re looking for HR guidance that feels like a true partnership, I’m here to help, one practical step at a time.</p>
+    <p>If you’re a small business owner who wants clarity, support, and a trusted HR partner in your corner, I’d be honoured to work with you.</p>
 
     <h3>What Clients Appreciate</h3>
     <ul class="bullets">
