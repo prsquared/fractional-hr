@@ -1,0 +1,4 @@
+# Redirect from Netlify subdomain to custom domain
+https://fractionalhr.netlify.app/* https://www.fractionalhrconsulting.ca/:splat 301!
+http://fractionalhr.netlify.app/* https://www.fractionalhrconsulting.ca/:splat 301!
+
