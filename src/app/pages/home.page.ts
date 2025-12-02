@@ -113,7 +113,7 @@ export class HomePage {
     {
       title: 'Simplifying HR for Small Businesses',
       summary: 'People are the heart of every business, no matter the size.',
-      full: 'My goal is to help small businesses receive high-quality HR guidance that big organizations rely, on, but delivered in a simple, practical, and human way.  My goal is to help small businesses receive high-quality HR guidance that big organizations rely, on, but delivered in a simple, practical, and human way. ',
+      full: 'My goal is to help small businesses receive high-quality HR guidance that big organizations rely, on, but delivered in a simple, practical, and human way.',
       image: 'assets/images/about-2.png',
       action: '/about',
       corner: 'corner'
