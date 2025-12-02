@@ -73,7 +73,7 @@ import { CommonModule } from '@angular/common';
     <div class="contact-info">
       <div class="card">
         <h3>Prefer email?</h3>
-        <p><a href="mailto:info&#64;geetuconsulting.ca">info&#64;geetuconsulting.ca</a></p>
+        <p><a href="mailto:info&#64;fractionalhrconsulting.ca">info&#64;fractionalhrconsulting.ca</a></p>
         <p class="muted">Response within 1 business day.</p>
       </div>
       <div class="card">
