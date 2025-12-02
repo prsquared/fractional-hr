@@ -30,7 +30,7 @@ import { NavbarComponent } from './navbar.component';
     </div>
     <div>
       <h4>Contact</h4>
-      <p><a href="mailto:info&#64;geetuconsulting.ca">info&#64;geetuconsulting.ca</a><br/>Serving small businesses across Ontario</p>
+      <p><a href="mailto:info&#64;fractionalhrconsulting.ca">info&#64;fractionalhrconsulting.ca</a><br/>Serving small businesses across Ontario</p>
     </div>
     <div>
       <h4>Legal</h4>
